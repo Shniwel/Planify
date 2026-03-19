@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 
 // Créer le transporteur Gmail
 function createTransporter() {
-  return nodemailer.createTransporter({
+  return nodemailer.createTransport({
     service: "gmail",
     auth: {
       user: process.env.GMAIL_USER,   // ex: moncompte@gmail.com
