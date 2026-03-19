@@ -2,20 +2,16 @@
   "name": "planify",
   "version": "1.0.0",
   "scripts": {
-    "build": "react-scripts build",
-    "start": "react-scripts start"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "nodemailer": "^6.9.9",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-dom": "^18.2.0"
   },
-  "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": ["last 1 chrome version"]
-  },
-  "eslintConfig": {
-    "extends": ["react-app"]
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "@vitejs/plugin-react": "^4.0.0"
   }
 }
