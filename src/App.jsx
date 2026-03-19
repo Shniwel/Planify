@@ -2,8 +2,8 @@ import { useState, useCallback, useEffect } from "react";
 import { createClient } from '@supabase/supabase-js';
 
 // ── CONFIGURATION CLOUD ──────────────────────────────────────────────────────
-const supabaseUrl = process.env.REACT_APP_SUPABASE_URL || "";
-const supabaseAnonKey = process.env.REACT_APP_SUPABASE_ANON_KEY || "";
+const supabaseUrl = process.env.VITE_APP_SUPABASE_URL || "";
+const supabaseAnonKey = process.env.VITE_APP_SUPABASE_ANON_KEY || "";
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 // ── CONSTANTES ────────────────────────────────────────────────────────────────
